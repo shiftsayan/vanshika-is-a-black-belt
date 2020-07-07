@@ -17,7 +17,7 @@ function App() {
           "I am a black belt <span role="img">💪</span>."
         </p>
         <p>
-          Flexed { flex_count } {flex_count == 1 ? "time" : "times" }.
+          Flexed { flex_count } {flex_count === 1 ? "time" : "times" }.
         </p>
       </header>
     </div>
