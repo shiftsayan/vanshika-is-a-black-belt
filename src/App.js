@@ -1,23 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
+
+import image1 from './images/1.png';
+import image2 from './images/2.png';
+import image3 from './images/3.png';
+import image4 from './images/4.png';
+import { flex_count } from './flex'
+import { choice } from './util'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={choice([image1, image2, image3, image4])} className="App-face" alt="face" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          "I am a black belt <span role="img">💪</span>."
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <p>
+          Flexed { flex_count } {flex_count == 1 ? "time" : "times" }.
+        </p>
       </header>
     </div>
   );
